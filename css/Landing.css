@@ -1,0 +1,122 @@
+
+h1, h2, h3{
+    font-family: 'Ubuntu', sans-serif;
+}
+p{
+    font-family:'Nunito', sans-serif;
+}
+a{ 
+    color: inherit; 
+    text-decoration: none;
+}
+a:hover{
+    color:#41444b;
+}
+hr{
+    height: 0;
+    align-items: center;
+    width: 30%;
+    border-top-width: 2px;
+    margin:auto;
+}
+
+#title, #Timeline{
+    background-color: #41444b;
+    color:white;
+}
+#learn, #footer{
+    background-color: #212529;
+    color:white;
+}
+
+
+
+.nav-sty{
+    font-size: large;
+    padding:20px;
+}
+.nav-brand-sty{
+    font-size: larger;
+    font-weight: 600;
+}
+.title{
+    text-align: left;
+    padding: 9% 7%;
+
+}
+.btn-title{
+    padding: 8px 10%;
+    margin: 5% 0 0 0;
+}
+.title-img{
+    padding: 0 0 0 8%;
+    height:100%;
+    width: auto;
+}
+.learn{
+    text-align: left;
+    padding:7% 7%;
+
+}
+.head-learn{
+    font-weight: 600;
+    
+}
+.text-learn{
+    margin:5% 0;
+    font-size: large;
+}
+.btn-learn{
+    padding: 5px 7%;
+}
+.lta, .htp{
+    border-width: 0 0 0 1px;
+    border-style: solid;
+    border-color: white;
+    
+}
+@media(max-width:991px){
+    .lta,.htp{
+        padding-bottom:5%;
+    }
+}
+
+
+.carousel{
+    padding: 10% 7% ;
+    margin:0;
+}
+.carousel-item{
+    text-align: center;
+}
+.c-head{
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    padding: 2% 0;
+}
+.w-10{
+
+    height:10vh;
+    width: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    opacity: 25%;
+
+}
+
+.info-icons{
+    padding: 2% 30% 1% 30%;
+    margin:0;
+}
+
+@media(min-width:1100px){
+    .info-icons{
+        padding: 2% 40% 1% 40%;
+    }
+}
+.copyright{
+    text-align: center;
+    padding: 1% 0 2% 0;
+    margin:0;
+}
