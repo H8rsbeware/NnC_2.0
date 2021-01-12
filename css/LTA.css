@@ -17,6 +17,8 @@ h1, h2, h3{
 }
 p{
     font-family:'Nunito', sans-serif;
+    font-size: 18px;
+    line-height: 150%;
 }
 a{ 
     color: inherit; 
@@ -50,7 +52,7 @@ ul{
     opacity: 25%;
 }
 .MMImg{
-    height: 80%;
+    height: 90%;
     width: auto;
     padding: 0 0 0 10%;
     opacity: 80%;
@@ -61,5 +63,5 @@ ul{
 }
 .further-LTA{
     text-align: left;
-    padding: 0 7% 10% 6%;
+    padding: 0 7% 15% 6%;
 }

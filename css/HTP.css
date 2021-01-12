@@ -1,8 +1,4 @@
-@media(min-width:609px){
-    *{
-        overflow: hidden;
-    }
-}
+
 h1, h2, h3{
     font-family: 'Ubuntu', sans-serif;
 }
