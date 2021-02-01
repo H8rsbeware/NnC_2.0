@@ -37,15 +37,15 @@ FBtn.addEventListener("click", function(){
 
 PBtn.addEventListener("click", function(){
     if(!Op){
-        CBtn.style.backgroundColor = "#FFF";
-        FBtn.style.backgroundColor = "#FFF";
+        CBtn.style.backgroundColor = "#41444b";
+        FBtn.style.backgroundColor = "#41444b";
         CBtn.style.color = "#212529";
         FBtn.style.color = "#212529";
         return;
     }
     if(!player.human){
-        XBtn.style.backgroundColor = "#FFF";
-        OBtn.style.backgroundColor = "#FFF";
+        XBtn.style.backgroundColor = "#41444b";
+        OBtn.style.backgroundColor = "#41444b";
         XBtn.style.color = "#212529";
         OBtn.style.color = "#212529";
         return;

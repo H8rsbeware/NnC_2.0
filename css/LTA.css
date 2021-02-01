@@ -28,6 +28,15 @@ a:hover{
     color:#41444b;
 }
 
+.nav-sty{
+    font-size: large;
+    padding:20px;
+}
+.nav-brand-sty{
+    font-size: larger;
+    font-weight: 600;
+}
+
 #LTA{
     background-color: #41444b;
     color:white;
@@ -48,8 +57,13 @@ ul{
     height:15vh;
     width: auto;
     display: block;
-    margin: 0 auto;
+    margin: 3% auto;
     opacity: 25%;
+}
+@media(max-width:800px){
+    .w-15{
+        margin: 7% auto;
+    }
 }
 .MMImg{
     height: 90%;

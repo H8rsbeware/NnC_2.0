@@ -109,9 +109,9 @@ body{
 
 .gameover{
     position: absolute;
-    width: 450px;
-    height: 450px;
-    background-color: rgba(0, 0, 0, 0.95);
+    width: 451px;
+    height: 451px;
+    background-color: rgba(33, 37, 41, 0.95);
 }
 .gameover h1{
     text-align: center;

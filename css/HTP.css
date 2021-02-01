@@ -22,6 +22,14 @@ hr{
 ul{
     list-style-type: circle;
 }
+.nav-sty{
+    font-size: large;
+    padding:20px;
+}
+.nav-brand-sty{
+    font-size: larger;
+    font-weight: 600;
+}
 
 #Rules{
     background-color: #41444b;
