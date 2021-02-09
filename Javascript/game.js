@@ -80,9 +80,9 @@ function init(player, Op) {
             GD[pos] = player.computer;
             console.log(GD);
 
-            let free = getFree(pos);
+            let clickSpace = getClicked(pos);
 
-            drawEdit(player.computer, free.freeI, free.freeJ);
+            drawEdit(player.computer, clickSpace.clickI, clickSpace.clickJ);
 
             if (isWin(GD, player.computer)) {
                 showGO(player.computer);
@@ -161,10 +161,10 @@ function init(player, Op) {
         return clear
     }
 
-    function getFree(pos) {
+    function getClicked(pos) {
         for(let i = 0; i < board.length; i++){
             for(let j = 0; j < board[i].length; j++) {
-                if(board[i][j] == pos) return{freeI : i, freeJ : j}
+                if(board[i][j] == pos) return{clickI : i, clickJ : j}
             }
         }
     }

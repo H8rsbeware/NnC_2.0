@@ -1,0 +1,72 @@
+[FILE] game.js
+    [CONST] canvas - Gets the canvas element on index.html to be drawn on
+    [CONST] ctx - Gets the canvas context               
+    [VAR]   board - Creates an array for the board
+    [CONST] col - The number of columns on the board 
+    [CONST] row - The number of rows on the board
+    [CONST] SI - The interval between each line on the board
+    [CONST] Xtile - Image object that contains the source for the X tile
+    [CONST] Otile - Image object that contains the source for the O tile   
+    [CONST] winPos - 3D array of all possible win conditions
+    [VAR]   GO - Game over check (boolean)
+    [VAR]   GD - Game date creates an array (with a length of 9) for storing board positions
+    [VAR]   Cplayer - Stores the current player
+    [FUNCT] drawBoard - draws the board on the ctx based on the col, row, and SI [CONST]
+        [VAR] pos - Holds the position of the rectangle being drawn, increments for each one
+        [VAR] i - for loop index drawing for each row
+        [VAR] j - for loop index drawing for each col
+    [FUNCT] {addEventListener} canvas - Finds the positon of a click
+        [VAR] x - The X coord of the click
+        [VAR] y - The Y coord of the click
+        [VAR] i - The X position on the board (0-2)
+        [VAR] j - The Y position on the board (0-2)
+        [VAR] pos - The overall position on the board
+    [VAR] Op - the opponent selected in settings
+    [VAR] clickedSpace - The position of the clicked space
+    [FUNCT] minimax - The minimax algorithm core
+        [VAR] ES - stores all empty spaces
+        [VAR] avMove - stores all moves and minimax values
+        [VAR] i - For loop for trying possible moves in ES
+        [VAR] pos - The current item in ES being tested
+        [VAR] store - back up of the Game data
+        [VAR] rMove - stores the current move and minimax value
+        [VAR] bMove - store for best move
+        [VAR] bTry - stores the value of the best move (for that player)
+    [FUNCT] getSpace - gets all empty spaces
+        [VAR] clear - list of the free spaces
+    [FUNCT] getClicked - gets the position of the clicked space
+        [OBJ] clickedSpace 
+            [PROP] clickI - I position in the Board array of the click
+            [PROP] clickJ - J position in the Board array of the click
+        [VAR] i - index of the X coord on the board being checked
+        [VAR] j - index of the Y coord on the board being checked
+    [FUNCT] isWin - Checks if a certain board is a win
+        [VAR] i - holds the 2nd dimension, of the 3D array, being seached by for loop 
+        [VAR] j - holds the 3rd dimension being searched by the loop
+        [VAR] won - holds if game is won for that player
+    [FUNCT] isTie - Chechs if a certain board is a tile
+        [VAR] isFull - holds whether the board is full 
+    [FUNCT] showGO - Shows the game over screen for the right player win/tie
+        [VAR] Src - Image of the winner/draw
+        [VAR] message - Selects the message for win or tie
+    [FUNCT] drawEdit - draw the move made by a player on the board with the correct tile
+        [CONST] Image - The image of the player selected
+[FILE] settings.js
+    [CONST] options - query of class .options from index.html
+    [CONST] GOElement - query of class .gameover from index.html
+    [CONST] CBtn - query of class .computer from index.html
+    [CONST] FBtn - query of class .player from index.html
+    [CONST] XBtn - query of class .x from index.html
+    [CONST] OBtn - query of class .o from index.html
+    [CONST] PBtn - query of class .play from index.html
+    [VAR]   Op - The Opponent type 
+    [OBJ] player - object containing the 3 types of players
+        [PROP] human - holds the player selected by the main player
+        [PROP] computer - holds the opposite player to the main
+        [PROP] friend - holds the opposite player to the main
+    [FUNCT] {addEventListener} XBtn- If clicked, colour of the selected button is swapped, and the player properties are updated to X as the main player
+    [FUNCT] {addEventListener} OBtn- If clicked, colour of the selected button is swapped, and the player properties are updated to O as the main player
+    [FUNCT] {addEventListener} CBtn- If clicked, colour of the selected button is swapped, and the opponent is defined as computer
+    [FUNCT] {addEventListener} FBtn- If clicked, colour of the selected button is swapped, and the opponent is defined as friend
+    [FUNCT] {addEventListener} PBtn- If clicked, the other 2 button sets are checked (making sure 1 is clicked for each) then initiating the game, and if not, the buttons not selected are highlighted 
+    [FUNCT] toggle - changes the colours of the button selected, only allowing one at a time.
