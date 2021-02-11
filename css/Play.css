@@ -13,6 +13,9 @@ body{
     margin: 25px auto;
     position: relative;
 }
+.nav-item{
+    padding:0px 20px;
+}
 .nav-sty{
     font-size: large;
     padding:20px;
@@ -24,6 +27,12 @@ body{
 #cvs{
     position: absolute;
     border: 1px solid #41444b ;
+}
+.mute{
+    color:#FFF;
+}
+.mute:hover{
+    color:#212529;
 }
 
 .options{

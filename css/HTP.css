@@ -30,6 +30,9 @@ ul{
     font-size: larger;
     font-weight: 600;
 }
+.nav-item{
+    padding:0px 20px;
+}
 
 #Rules{
     background-color: #41444b;

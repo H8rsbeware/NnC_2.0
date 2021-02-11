@@ -1,4 +1,5 @@
 [FILE] game.js
+    [VAR]   muted - Hold a boolean value passed from settings, determines whether sound should be played
     [CONST] canvas - Gets the canvas element on index.html to be drawn on
     [CONST] ctx - Gets the canvas context               
     [VAR]   board - Creates an array for the board
@@ -49,6 +50,7 @@
     [FUNCT] showGO - Shows the game over screen for the right player win/tie
         [VAR] Src - Image of the winner/draw
         [VAR] message - Selects the message for win or tie
+    [CONST] placement - The noise played when an item is placed
     [FUNCT] drawEdit - draw the move made by a player on the board with the correct tile
         [CONST] Image - The image of the player selected
 [FILE] settings.js
@@ -64,6 +66,11 @@
         [PROP] human - holds the player selected by the main player
         [PROP] computer - holds the opposite player to the main
         [PROP] friend - holds the opposite player to the main
+    [VAR]   muted - initation condition for the game, decides whether the game should be muted
+    [VAR]   select - sound when a selection button is clicked
+    [VAR]   start - sound when game is properly started
+    [VAR]   error - sound when something hasnt been selected
+    [FUNCT] {addEventListener} mute- If clicked, sound is either muted or unmuted and the [VAR] muted 's value is reverse and image is changed
     [FUNCT] {addEventListener} XBtn- If clicked, colour of the selected button is swapped, and the player properties are updated to X as the main player
     [FUNCT] {addEventListener} OBtn- If clicked, colour of the selected button is swapped, and the player properties are updated to O as the main player
     [FUNCT] {addEventListener} CBtn- If clicked, colour of the selected button is swapped, and the opponent is defined as computer
